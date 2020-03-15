@@ -8,10 +8,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class GitDemoApplicationTests {
 	
-	Logger logger=LoggerFactory.getLogger(GitDemoApplicationTests.class);
+	public static final Logger logger=LoggerFactory.getLogger(GitDemoApplicationTests.class);
+	
 
 	@Test
 	void contextLoads() {
+		logger.info("hello test");
 	}
 
 }
